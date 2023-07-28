@@ -1,0 +1,101 @@
+.submit-cont{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    
+}
+
+input[type=name]:focus {
+    border: 3.5px solid lightblue;
+    outline: none;
+  }
+
+  input[type=ms]:focus {
+    border: 3.5px solid lightblue;
+    outline: none;
+  }
+
+
+.submit-name{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.submit-ms{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.submit-file{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.name-box{
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800px;
+    padding-left: 10px;
+    border-color: lightblue
+}
+
+.ms-box{
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800px;
+    padding-left: 10px;
+    border-color: lightblue;
+}
+
+.word-submit{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: skyblue;
+
+}
+
+
+/*Button Code */
+input[type="file"]::file-selector-button {
+    padding: 0.2em 0.4em;
+    border-radius: 10px;
+    background-color: #5cd4e7;
+    transition: 1s;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: lightblue;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  input[type="file"]::-ms-browse:hover {
+    background-color: white;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #81ecec;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: pink;
+    cursor: pointer;
+    
+  }

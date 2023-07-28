@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dang Nhap Do An</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+<style>
+    .background {
+      background-size: 100% 100%;
+      background-image: url("background.jpg"),url("https://wallpapercave.com/wp/wp8596977.jpg");
+      width: 100%;
+      height: 730px;
+      background-blend-mode: soft-light;
+    }
+</style>
+
+
+
+  <section class="vh-100 background">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Đăng Nhập</h3>
+
+            <div class="form-outline mb-4">
+              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX-2">Tài Khoản</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX-2">Mật Khẩu</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="typePasswordX-2" style="color: red" id="error"></label>
+            </div>
+
+            <!-- Checkbox -->
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit" id="myBtn">Login</button>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  let name;
+  let pass;
+  document.getElementById("myBtn").addEventListener("click", function() {
+    name = document.getElementById("typeEmailX-2").value;
+    pass = document.getElementById("typePasswordX-2").value;
+    if(name == "21200249" && pass == "123"){
+      document.getElementById("error").style.color = "lightgreen"
+      document.getElementById("error").innerHTML = "Đăng nhập thành công !"
+      window.close("DoAn.html");
+      window.open("SubmitForm.html");
+    }
+    else{
+      document.getElementById("error").innerHTML = "Sai tài khoản hoặc mật khẩu !"
+    }
+});
+</script>
+
+</section>

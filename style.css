@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Transition*/
+.transition-fade{
+    opacity:1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+.html.is-animating.transition-fade{
+    opacity: 1;
+    transform: translateX(100%);
+}
+.html.is-leaving.transition-fade{
+    opacity: 0;
+    transform: translateX(0);
+}
+
+/*Header*/
+.background{
+    background-size: cover;
+    background-image: url("https://www.news-medical.net/images/Article_Images/ImageForArticle_22064_16436342404173431.jpg"),url("https://wallpapercave.com/wp/wp8596977.jpg");
+    width: 100%;
+    height: 730px;
+    background-blend-mode: soft-light;
+    align-items: center;
+}
+li,a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: skyblue;
+    text-decoration: none;
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav_link{
+    list-style: none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a{
+    transition: all 0.4s ease 0s;
+}
+
+.nav_link li a:hover{
+    color:pink
+}
+button{
+    padding:5px 15px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+button:hover{
+    background-color: pink;
+}
+.logo{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.background-cont{
+    max-height: 180px;
+    width: 100%;
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.box-descript{
+    display: flex;
+    justify-content: center;
+}
+.descript-header{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    line-height: 1.7;
+    font-weight: 700;
+    color: white;
+}
+.descript-bot{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: white;
+    
+}
+
+
+
+/*Introdution side*/
+.tieude-gioithieu{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: skyblue;
+}
+.tieude{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: skyblue;
+}
+.box-introdution{
+    background-image: url("background5.png");
+    width: 100%;
+    height: 500px;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: block;
+    position: relative;
+}
+.in-box-introdution{
+    max-width: 100%;
+    max-height: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+.descript{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+/*Research*/
+.box-research{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    max-width: 200px;
+    max-height: 230px;
+    border-style: solid;
+    border-color: skyblue;
+    align-items: center;
+    word-break: break-word;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    overflow: hidden;
+}
+.box-research:hover{
+    background-color: lightslategray;
+}
+.pic-in-box{
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+    border-radius: 30px;
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+.in-box-research{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.symbol{
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+}
+.descript-major{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: white;
+    font-weight: 700;
+}
+.box-introdution-major{
+    max-width: 100%;
+    height: 500px;
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-image: url("https://www.pwc.com/ca/en/consulting/digital-operations/DOIC-hero-image.jpg"),url("https://wallpapercave.com/wp/wp8596977.jpg");
+    background-blend-mode: soft-light;
+}
+
+/*Flowchart*/
+.chart{
+    margin-top: 10px;
+    max-height: 600px;
+    max-width: 80%;
+}
+.objective-cont{
+    background-image: url("background5.png");
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: hidden;
+}
+
+.box-objective{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.descript-objective{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    line-height: 1.7;
+    color: skyblue;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:  1000px){
+    .descript{
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+@media only screen and (max-width:  650px){
+    .descript{
+        text-indent: 150%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .tieude-gioithieu{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: skyblue;
+    }
+    .box-introdution{
+        background-image: url("background5.png");
+        width: 100%;
+        height: 500px;
+        padding-top: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
+        display: block;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:  1000px){
+    .nav_link li{
+        text-indent: 150%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .background-cont{
+        max-height: 180px;
+        width: 100%;
+        display: block;
+        padding: 20px 10%;
+        align-items: center;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+
+    .box-descript {
+        text-indent: 150%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .box-introdution-major{
+        width: 100%;
+        height: 500px;
+        padding-top: 80px;
+        padding-left: 150px;
+        padding-right: 150px;
+        background-image: url("https://www.pwc.com/ca/en/consulting/digital-operations/DOIC-hero-image.jpg"),url("https://wallpapercave.com/wp/wp8596977.jpg");
+        background-blend-mode: soft-light;
+    }
+    
+    
+
+
+   
+
+    
+}
+
